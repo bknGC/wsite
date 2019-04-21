@@ -1,0 +1,13 @@
+<html>
+<head>
+
+</head>
+  <body>
+  <h1><em><b>> Статьи</b></em></h1><br/>
+    <% @article.each do |article| %>
+      <h3><strong><%= article.title %></strong></h3>
+      <h6><em><%= article.body %></em></h6><br/>
+    <br/>
+  <% end %>
+  </body>
+</html>

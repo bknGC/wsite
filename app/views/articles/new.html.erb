@@ -1,0 +1,15 @@
+<h1><em><b>> Добавить статью</b></em></h1><br/>
+<br/>
+<%= form_for :article, url: articles_path do |f| %>
+  <p>
+    <em>Название статьи:</em><br/>
+  <%= f.text_field(:title, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <em>Текст статьи:</em><br/>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.submit 'Добавить статью',({:class => 'btn btn-success'}) %>
+  </p>
+<% end %>
